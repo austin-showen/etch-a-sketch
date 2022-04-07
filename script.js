@@ -1,7 +1,5 @@
-const container = document.querySelector(".container");
-const startSize = 16;
-
 function draw(size) {
+    const container = document.querySelector(".container");
     for (i = 0; i < size; i++) {
         const row = document.createElement("div");
         row.classList.add("row");
@@ -32,9 +30,8 @@ function reset() {
     draw(newSize);
 }
 
-draw(startSize);
-
-
-
 const resetButton = document.querySelector(".reset");
 resetButton.addEventListener("click", reset)
+
+const startSize = 16;
+draw(startSize);
