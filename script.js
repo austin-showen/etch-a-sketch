@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-let size = 16;
+const size = 16;
 
 for (i = 0; i < size; i++) {
     const row = document.createElement("div");
@@ -11,3 +11,11 @@ for (i = 0; i < size; i++) {
         row.appendChild(cell);
     }
 }
+
+function onHover() {
+    this.classList.add("active");
+}
+
+const cells = document.querySelectorAll(".cell");
+console.log(cells);
+cells.forEach(cell => cell.addEventListener("mouseenter", onHover));

@@ -21,3 +21,7 @@ body {
     border: 1px solid black;
     flex: 1;
 }
+
+.active {
+    background-color: black;
+}
